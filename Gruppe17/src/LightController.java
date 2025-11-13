@@ -1,5 +1,5 @@
 ﻿package Gruppe17.src;
 
-public class MainApp {
+public class LightController {
     
 }
