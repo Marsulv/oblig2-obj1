@@ -1,0 +1,13 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run MainApp",
+            "request": "launch",
+            "mainClass": "MainApp",
+            "vmArgs": "--module-path \"C:/Users/Scorett/Documents/USN IT/openjfx-25.0.1_windows-64_bin-sdk/javafx-sdk-25-0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

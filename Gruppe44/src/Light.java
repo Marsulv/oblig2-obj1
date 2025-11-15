@@ -1,28 +1,55 @@
-﻿package Gruppe17.src;
+﻿
+//Dette Light, hvor man bruker binding til Layout.java. 
+//GUI-et kan dermed oppdatere seg selv når modellens tilstand endres.
+//For eksempel: når lyset skrus på, endres en property, og GUI-et oppdateres automatisk.
+//Inspirert av kapittel 14,15 og 16, spesielt binding-delen i kap.16.
+//Bygget av Maria
 
-//Dette er modellklassen for lyset i rommene
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 
 public class Light {
-    private String name;
-    private boolean isOn;
-    private int brightness; //0-100
 
-    public Light (String name) {
+    private String name;
+
+    private BooleanProperty isOn = new SimpleBooleanProperty(false);
+    private IntegerProperty brightness = new SimpleIntegerProperty(50);
+
+    public Light(String name) {
         this.name = name;
-        this.isOn = false;
-        this.brightness = 50; //default brightness
     }
 
-    public void turnOn() { isOn = true; }
-    public void turnOff() { isOn = false; }
+    // Properties
+    public BooleanProperty isOnProperty() {
+        return isOn;
+    }
+
+    public IntegerProperty brightnessProperty() {
+        return brightness;
+    }
+
+    // Convenience metoder, ikke nødvendig, men vanlig å ha.
+    public boolean isOn() {
+        return isOn.get();
+    }
+
+    public void setOn(boolean value) {
+        isOn.set(value);
+    }
+
+    public int getBrightness() {
+        return brightness.get();
+    }
 
     public void setBrightness(int value) {
-        if (value < 0) brightness = 0;
-        else if (value > 100) brightness = 100;
-        else brightness = value;
+        if (value < 0) brightness.set(0);
+        else if (value > 100) brightness.set(100);
+        else brightness.set(value);
     }
 
-    public boolean isOn() { return isOn; }
-    public int getBrightness() { return brightness; }
-    public String getName() { return name; }
+    public String getName() {
+        return name;
+    }
 }
