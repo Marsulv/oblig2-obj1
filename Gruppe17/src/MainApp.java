@@ -1,5 +1,1 @@
-﻿package Gruppe17.src;
-
-public class MainApp {
-    
-}
+package Gruppe17.src; 
