@@ -1,4 +1,4 @@
-﻿
+
 //Dette Light, hvor man bruker binding til Layout.java. 
 //GUI-et kan dermed oppdatere seg selv når modellens tilstand endres.
 //For eksempel: når lyset skrus på, endres en property, og GUI-et oppdateres automatisk.

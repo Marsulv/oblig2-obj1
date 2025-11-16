@@ -1,4 +1,4 @@
-﻿
+
 // KitchenRoom-modellen (og LivingRoom) representerer et rom i applikasjonen som har ett lys.
 // Klassen følger samme struktur som LivingRoom, som anbefalt i kapittel 14–15.
 //

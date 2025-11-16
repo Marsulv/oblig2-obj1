@@ -1,4 +1,4 @@
-﻿
+
 // Kap. 14-15 brukt som inspirasjon, satt sammen og studert kode fra eksemplene i disse kapitlene.
 // Brukt AI til å hjelpe med feilsøking, sette inn riktig syntaks. Både VS Code Copilot og ChatGPT er brukt.
 // LightController kobler UI fra Layout.java med modellene LivingRoom og KitchenRoom.

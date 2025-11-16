@@ -1,10 +1,10 @@
 
 
 // Kap. 15: JavaFX Application. Klassen arver fra Application, fra kapittel 14 og 15.
-// Dette gjør at JavaFX kan kalle start()-metoden når applikasjonen startes.
+// Dette gjÃ¸r at JavaFX kan kalle start()-metoden nÃ¥r applikasjonen startes.
 // start(Stage) setter opp hovedvinduet (primary stage) og fungerer som bindeledd mellom
-// modellene (Light, Room) og brukergrensesnitt (Layout). LightController bygger på
-// layout gjennom controller.buildLayout(), som følger MVC-mønsteret. (kap. 15).
+// modellene (Light, Room) og brukergrensesnitt (Layout). LightController bygger pÃ¥
+// layout gjennom controller.buildLayout(), som fÃ¸lger MVC-mÃ¸nsteret. (kap. 15).
 // Scene-objektet inneholder alt som skal vises i vinduet.
 //Rammeverk bygget av Maria
 

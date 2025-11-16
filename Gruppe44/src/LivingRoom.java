@@ -1,4 +1,4 @@
-﻿
+
 
 //inspirasjon fra kap. 14, enkle klasser og objekter
 //Bygget av Maria
